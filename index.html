@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdul Rafay CV [Practice Task]</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="/Practice Task/favicon.ico">
+</head>
+
+<body>
+    <div class="darkmode">
+        <button class="button">Dark Mode</button>
+    </div>
+
+    <div class="container">
+        <div class="left">
+            <header>
+                <h1>Abdul Rafay</h1>
+                <div class="card">
+                    <div class="loader">
+                        <p>Web</p>
+                        <div class="words">
+                            <span class="word">developer</span>
+                            <span class="word">designer</span>
+                            <span class="word">architect</span>
+                            <span class="word">analyser</span>
+                            <span class="word">expert</span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="info">
+                <p class="dob"><strong>Date of Birth:</strong> 01/07/2005</p>
+                <p class="phone"><strong>Phone:</strong> +92 (303) 5295066</p>
+                <p class="mail"><strong>Email:</strong> <a href="mailto:rafay.work0709@gmail.com">rafay.work0709@gmail.com</a></p>
+            </div>
+
+            <section class="profile">
+                <h2><span class="prf">Profile</span></h2>
+                <br>
+                <p>Hi, I’m Abdul Rafay! I’ve worked as a frontend developer during my internship, focusing on Flutter, which really helped me sharpen my skills in building sleek, user-friendly interfaces. I also have a knack for designing ad assets and web layouts, making sure they not only look great but also work smoothly.
+
+                    When I’m not working, you’ll probably find me watching anime, sketching random ideas, stargazing (astronomy fascinates me), or gaming. These hobbies keep me inspired and give me a creative edge in everything I do.
+                </p>
+            </section>
+
+            <section class="skills">
+                <h2><span class="prf">Skills</span></h2>
+                <ul>
+                    <li>HTML5 & CSS3</li>
+                    <li>JavaScript</li>
+                    <li>Responsive Web Design</li>
+                    <li>Adobe Photoshop & XD</li>
+                    <li>UI/UX Principles</li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="right">
+            <section class="education">
+                <h2>Education</h2>
+                <div class="edu-item">
+                    <h3>Bachelors in Software Engineering</h3>
+                    <p>Capital University of Science and Technology | 2021 - Present</p>
+                </div>
+                <div class="edu-item">
+                    <h3>Angela Yu's Web Development Boot Camp</h3>
+                    <p>London App Brewery | 2020</p>
+                </div>
+                <div class="edu-item">
+                    <h3>Harvard CS50 - Introduction to Computer Science</h3>
+                    <p>Harvard University | EdX</p>
+                </div>
+            </section>
+
+            <section class="experience">
+                <h2>Experience</h2>
+                <div class="exp-item">
+                    <h3>Internship | Flutter (Dart) Front-end Development</h3>
+                    <p>Cognitive Health International - CHI | 2024</p>
+                    <ul>
+                        <li>Worked in development of an app for CHI</li>
+                        <li>Mainly focused on UI/UX and it's best practices</li>
+                    </ul>
+                </div>
+
+                <div class="exp-item">
+                    <h3>Web & Graphics Designer</h3>
+                    <p>SurgiMac | USA</p>
+                    <ul>
+                        <li>Designed various design assets for SurgiMac</li>
+                        <li>Mainly worked on Graphic Design assets but also a bit on web design.</li>
+                    </ul>
+                </div>
+
+                <button class="btn">
+                    <svg class="svgIcon" viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm50.7-186.9L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"></path>
+                    </svg>
+                    <a href="https://discord.gg/HffxqSAm">Let's work together!</a>
+                </button>
+            </section>
+        </div>
+    </div>
+
+    <script>
+        const BUTTON = document.querySelector(".button");
+        const BODY = document.querySelector("body");
+        const RIGHT = document.querySelector(".right");
+        BUTTON.addEventListener('click', () => {
+            BODY.classList.toggle('dark-mode')
+            RIGHT.classList.toggle('right-darkmode');
+
+        })
+    </script>
+</body>
+
+</html>
